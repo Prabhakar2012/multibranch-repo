@@ -1,9 +1,10 @@
 node('built-in')
  {
-    stage('Continuous Download ') {
+    stage('Continuous Download_Master') {
     git 'https://github.com/sunildevops77/maven.git'
 }
 
- stage('Continuous Build ') {
+ stage('Continuous Build_Master') {
    sh 'mvn package'
+}
 }
